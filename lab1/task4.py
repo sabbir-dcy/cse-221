@@ -19,8 +19,8 @@ def task4(mark, id):
     print(f'ID: {id[i]} Mark: {mark[i]}', file=op)
 
 if __name__=='__main__':
-  f = open(r'C:\Users\sas\Desktop\New folder\python\lab1\input4.txt','r')
-  op = open(r'C:\Users\sas\Desktop\New folder\python\lab1\output4.txt','w')
+  f = open(r'/content/sample_data/input4.txt','r')
+  op = open(r'/content/sample_data/output4.txt','w')
 
   f.readline()
 

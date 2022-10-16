@@ -1,3 +1,5 @@
+#2b
+
 import time
 import math
 import matplotlib.pyplot as plt
@@ -41,11 +43,11 @@ for i in range(n-1):
   start = time.time()
   fibonacci_2(x[i+1])
   z[i+1]= time.time()-start
-  x_interval = math.ceil(n/10)
-  plt.plot(x, y, 'r')
-  plt.plot(x, z, 'b')
-  plt.xticks(np.arange(min(x), max(x)+1, x_interval))
-  plt.xlabel('n-th position')
-  plt.ylabel('time')
-  plt.title('Comparing Time Complexity!')
-  plt.show()
+x_interval = math.ceil(n/10)
+plt.plot(x, y, 'r')
+plt.plot(x, z, 'b')
+plt.xticks(np.arange(min(x), max(x)+1, x_interval))
+plt.xlabel('n-th position')
+plt.ylabel('time')
+plt.title('Comparing Time Complexity!')
+plt.show()

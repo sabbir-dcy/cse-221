@@ -14,8 +14,8 @@ def bubbleSort(arr):
 
 
 if __name__ == '__main__':
-  f = open(r'C:\Users\sas\Desktop\New folder\python\lab1\input3.txt','r')
-  op = open(r'C:\Users\sas\Desktop\New folder\python\lab1\output3.txt','w')
+  f = open(r'/content/sample_data/input3.txt','r')
+  op = open(r'/content/sample_data/output3.txt','w')
 
   f.readline()
   arr = f.readline().split(' ')

@@ -19,10 +19,10 @@ def task1b(operations):
 
 if __name__ == '__main__':
   # assign input file
-  inp = open(r'C:\Users\sas\Desktop\New folder\python\lab1\input1b.txt','r')
+  inp = open(r'/content/sample_data/input1b.txt','r')
 
   # assign output file
-  op = open(r'C:\Users\sas\Desktop\New folder\python\lab1\output1b.txt','w')
+  op = open(r'/content/sample_data/output1b.txt','w')
 
   # read first line
   inp.readline()
