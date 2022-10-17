@@ -16,8 +16,8 @@ def printer(arr):
     print(f'{x["marks"]}',end=' ', file=otf)
 
 if __name__ == "__main__":
-  inf = open(r'I:\CSE221\cse-221\Lab2\input1.txt','r') #input file
-  otf = open(r'I:\CSE221\cse-221\Lab2\output1.txt','w') #output file
+  inf = open(r'/content/sample_data/input1.txt','r') #input file
+  otf = open(r'/content/sample_data/output1.txt','w') #output file
 
   # first line denotes len of the array
   l = int(inf.readline())
