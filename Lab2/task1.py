@@ -10,10 +10,6 @@ def insertion_sort(arr):
       j-=1  
     arr[j+1] = current 
 
-def arr_reader():
-  arr = inf.readline().split(' ')
-  arr = [int(a) for a in arr]
-  return arr
 
 def printer(arr):
   for x in arr:
@@ -25,8 +21,11 @@ if __name__ == "__main__":
 
   inf.readline()
 
-  marks_arr = arr_reader()
-  id_arr = arr_reader()
+  # readling line as array
+  # converting each element from string to integer
+  # moving them to another array
+  marks_arr = [int(a) for a in inf.readline().split(' ')]
+  id_arr = [int(a) for a in inf.readline().split(' ')]
 
   student_arr = [] # empty array for objects
 
