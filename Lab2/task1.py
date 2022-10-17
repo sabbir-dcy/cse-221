@@ -1,5 +1,5 @@
-def insertion_sort(arr):
-  for i in range(len(arr)-1):
+def insertion_sort(arr,l):
+  for i in range(l-1):
     current = arr[i+1]
     j = i
     while j >= 0:
@@ -16,10 +16,11 @@ def printer(arr):
     print(f'{x["marks"]}',end=' ', file=otf)
 
 if __name__ == "__main__":
-  inf = open(r'I:\CSE221\cse-221\Lab2\input1.txt','r')
-  otf = open(r'I:\CSE221\cse-221\Lab2\output1.txt','w')
+  inf = open(r'I:\CSE221\cse-221\Lab2\input1.txt','r') #input file
+  otf = open(r'I:\CSE221\cse-221\Lab2\output1.txt','w') #output file
 
-  inf.readline()
+  # first line denotes len of the array
+  l = int(inf.readline())
 
   # readling line as array
   # converting each element from string to integer
@@ -30,10 +31,10 @@ if __name__ == "__main__":
   student_arr = [] # empty array for objects
 
   # adding elements from both array as objects
-  for i in range(len(marks_arr)):
+  for i in range(l):
     student_arr.append({"marks":marks_arr[i], "id":id_arr[i]})
 
-  insertion_sort(student_arr)
+  insertion_sort(student_arr,l)
   printer(student_arr)
 
 
