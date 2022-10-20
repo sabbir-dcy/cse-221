@@ -1,14 +1,17 @@
-def insertion_sort(arr,l):
-  for i in range(l-1):
+def insertion_sort(arr,l): 
+  for i in range(l-1): 
     current = arr[i+1]
     j = i
-    while j >= 0:
-      if arr[j]["id"] < current["id"]:
+    while j >= 0: 
+      if arr[j]["id"] < current["id"]: 
         arr[j+1] = arr[j]
-      else:
+      
+      else: 
         break
-      j-=1  
-    arr[j+1] = current 
+
+      j-=1
+  
+    arr[j+1] = current
 
 
 def printer(arr):
